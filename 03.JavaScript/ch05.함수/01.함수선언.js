@@ -35,3 +35,8 @@ console.log(square(5));
 const sq = x => x*x;
 console.log(sq(10));
 
+//짝수면 제곱수, 홀수면 세제곱수 반환하는 함수 작성하기
+const myFunc = x => x%2 == 0 ? x*x : x*x*x;
+console.log(myFunc(2), myFunc(3));
+
+

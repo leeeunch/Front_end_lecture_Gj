@@ -13,3 +13,8 @@ console.log(array.toString());
 for (let i=0; i<array.length; i++) { //초기값, 조건, 증감문
     console.log(i, array[i]);
 }
+
+// Enhanced for-loop
+for (let item of array) {
+    console.log(item);
+}
