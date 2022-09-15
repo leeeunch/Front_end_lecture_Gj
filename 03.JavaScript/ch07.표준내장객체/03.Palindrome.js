@@ -31,12 +31,13 @@ for (let i=1; i<array.length; i++) {
 }
 console.log(maxIdx,maxVal);
 
-let maxPal = 0, maxI = 0, maxK = 0;
-for (let i=100; i<=999; i++) {
-    for (let k=i; k<=999; k++) {
-        let product = i * k;
-        if (isPalindrome(String(product))) {
-            if (product > maxPal) {
+//palindrome 예제 답
+let maxPal = 0, maxI = 0, maxK = 0;  //값 초기화
+for (let i=100; i<=999; i++) { //100~99까지 범위
+    for (let k=i; k<=999; k++) { //중복을 방지하기 위해 k는 i이상인 수
+        let product = i * k; //두 수의 곱을 product 변수에 선언
+        if (isPalindrome(String(product))) { //isPalindrome함수의 반환값이 참이면, 
+            if (product > maxPal) { //product 값이 기존의 maxPal보다 크면 값 재설정
                 maxPal = product;
                 maxI = i;
                 maxK = k;

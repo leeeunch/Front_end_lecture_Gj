@@ -47,3 +47,29 @@ productName = [];
 productName.push(food.name);
 console.log(productName);
 
+//정답
+class Cart {
+    constructor(){
+        this.cart = [];
+    }
+    add(product, quantity) {
+        if (quantity <= 0)
+            return;
+        this.cart.push({product, quantity});
+    }
+    sum() {
+        let totalPrice = 0;
+        for (let cart of this.cart){
+            totalPrice = cart.quantity * cart.product.price;
+        }
+        return totalPrice;
+    }
+    toString() {
+        let result = ''
+        for (let cart of this.cart){
+            result += item.
+            
+        }
+    }
+}
+

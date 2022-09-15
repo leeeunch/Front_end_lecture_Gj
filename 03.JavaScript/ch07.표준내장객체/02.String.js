@@ -47,7 +47,7 @@ console.log(str.slice(7,-1));
 console.log(str.substring(7,13));
 
 //문자열을 배열로 만들기
-const fruits = str.split(',');
+const fruits = str.split('');
 console.log(fruits);
 
 //문제

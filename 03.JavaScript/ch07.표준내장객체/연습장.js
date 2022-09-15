@@ -21,6 +21,24 @@
 // let strNum = String(1888).split('');
 // console.log(strNum);
 
-let num = {};
-num[0] = 1;
-console.log(num);
+// let num = {};
+// num[0] = 1;
+// console.log(num);
+
+let a = 'afb';
+// console.log(Array(a).reverse());
+
+let set = new Set();
+set.add([1,2,3,3]);
+// console.log(set);
+
+let A = [ 1, 2,  3, 4, 6, 12, 5, 11, 55]; //set
+let B = [1, 2, 3, 4, 6, 12, 1, 2,3, 5, 11, 55];  //전체
+
+for (i of A) {
+    B.splice(B.indexOf(i),1);
+}
+console.log(B);
+
+let cc = 'cj jds vdsnvj';
+console.log(cc.split(' '))
