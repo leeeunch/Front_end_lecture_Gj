@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").on('click', function(event) {
+                $('#lie').after("<h7>힝 어려웡</h7>");
+                $('p').text('사실 아님...').css('backgroundColor','blue');
+
+            });
+        })
+    </script>
+</head>
+<body>
+    <div>
+    <p id="lie">나는 jquery 고수</p>
+    <button>바보</button>
+    </div>
+</body>
+</html>

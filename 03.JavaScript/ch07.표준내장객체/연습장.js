@@ -41,4 +41,4 @@ for (i of A) {
 console.log(B);
 
 let cc = 'cj jds vdsnvj';
-console.log(cc.split(' '))
+console.log(cc.split(' ').s)

@@ -10,13 +10,13 @@
             document.querySelector('h1').style.backgroundColor = 'yellow';
             document.querySelector('h3').style.color = 'red';
         }
-        window.onload = handler; //이벤트 핸들러 등록 //1번 방법
+        //window.onload = handler; //이벤트 핸들러 등록 //1번 방법
+        //이 떄는 <body> 사용
     </script>
 </head>
-<!--이벤트가 발생하면 핸들러 호출-->
+<!--이벤트가 발생하면 핸들러 호출 (주로 사용되는 방법)-->
 <!--2번 방법-->
-<!-- <body onload = "handler()"> -->
-<body>
+<body onload = "handler()">
     <h1>Header 1</h1>
     <h3>Header 3</h3>
 </body>

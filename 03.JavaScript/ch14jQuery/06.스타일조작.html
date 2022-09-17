@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스타일 조작</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#id').appendTo('<a>가리비</a>');
+            //div 객체 생성 및 스타일 적용 한번에
+            for (let i=256; i>0; i--) {
+                $('<div></div>')
+                    .css('height', '2px')
+                    .css('background', `rgb(${30},${255},${i}`)
+                    .appendTo('body');
+            }
+        })
+    </script>
+</head>
+<body>
+    <div>
+    </div>
+    <div id="id">
+        <a>바보</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<p>, initial-scale=1.0">
+    <title>jQuery 맛보기</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+<body>
+    <p id="js"></p>
+    <p id="jq"></p>
+    <p id="jq2"></p>
+    <script>
+        const pjs = document.getElementById('js');
+        pjs.innerHTML = '자바스크립트 동적 생성';
+        pjs.style.backgroundColor = 'yellow';
+        pjs.style.fontsize = '20px';
+        
+        //2가지의 jquery 사용방법
+        jQuery('#jq').text('jQuery 동적 생성');
+        jQuery('#jq').css('backgroundColor', 'beige');
+        jQuery('#jq').css('fontSize', '30px');
+        jQuery('#jq').css('color','pink');
+
+        $('#jq2').text('jQuery가 축약해서 동적으로 생성')
+                .css('backgroundColor','beige')
+                .css('fontsize','20px')
+                .css('color','magenta');
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('<p></p>').css('color','gray')
+                        .html('아 피곤해')
+                        .appendTo('body');
+            $('p').on('click', function(event) {
+                $(this).html('응 오늘 js, squery 다 씹어먹을꺼임')
+                $('<img><img>').attr('src','https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxxbMek2BAItmuyL-iykpP-c9oAHaLefacnQ&usqp=CAU')
+                           .appendTo('body');
+            });
+            $('input').on('keyup', function(e) {
+                $('#ing').html($(this).val());
+            }).on('change', function(e) {
+                $('<p></p>').html($(this).val())
+                            .attr('id','ingAfter')
+                            .insertAfter('#done');
+                $('#done').hide();
+            });
+        });
+
+        
+    </script>
+</head>
+<body>
+    입력 : <input type="text">
+    <hr>
+    입력 중인 글자: <p id="ing"></p>
+    <hr>
+    입력 다 된 글자: <p id="done"></p> 
+</body>
+</html>

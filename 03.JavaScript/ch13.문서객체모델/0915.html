@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가리비 바보 똥꾸</title>
+    <script>
+        function makePtag() {
+            document.querySelector('img').setAttribute("width",300);
+            document.querySelector('img').setAttribute("height",300);
+            const w = document.querySelector('img').getAttribute("height");
+            const p = document.createElement('p');
+            p.innerHTML = 'pTag';
+            document.body.appendChild(p);
+            const child = document.createElement('h1');
+            document.querySelector('div').append(child);
+            document.querySelector('h1').innerHTML = '진심';
+
+        }
+    </script>
+</head>
+<body>
+    <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjA1MTZfMjgz%2FMDAxNjUyNzA4NDA3MDcy.t-XchADNqoDRFel5nBH6EJNpFj3ZAYgTj0tHYr48mdEg.k0HrNp9mAME7S9yV8cQ1lXu6ih2S8s5zE4CUFXCK-aUg.JPEG.radiant0807%2FIMG%25A3%25DF8442.JPG&type=sc960_832">
+    <button onclick="makePtag()">리비바보</button>
+    <div></div>
+</body>
+</html>
