@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('button').on('click', function(e){
+                $('p').each(function (index,element) {
+                    if (index%3 == 0)
+                        $(this).css('fontSize','20px')
+                            .css('backgroundColor','blue');
+                });
+            });
+        });
+    </script>
+    <title>고양이와 사람</title>
+</head>
+<body>
+    <div>
+        <button>누르지마시오</button>
+        <p class="human">이은찬</p>
+        <p class="cat">가리비</p>
+        <p class="human">이은비</p>
+        <p class="cat">김복남</p>
+        <p class="human">이은찬</p>
+        <p class="cat">가리비</p>
+        <p class="human">이은비</p>
+        <p class="cat">김복남</p>
+    </div>
+</body>
+</html>

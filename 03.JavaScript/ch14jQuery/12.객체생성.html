@@ -12,12 +12,12 @@
                 $('<h1></h1>').text($(this).text()).appendTo('body');
             }); */
             const handler = function(e) {
-                $('<h1></h1>')
-                    .text($(this).text())
+                $('<h1></h1>')                          // 새로운 h1 태그 생성
+                    .text($(this).text())               // 함수에서 선택한 요소의 text를 생성한 h1의 txt를 새로운 태그
                     .on('click', handler)               // 모든 줄에서 객체 생성 가능   //recall 함수
-                    .appendTo('body');
+                    .appendTo('body');                  // body 태그에 요소 추가
             }
-            $('h1').on('click', handler);           //처음 함수 실행
+            $('h1').on('click', handler);               // 처음 함수 실행
             //$('h1').click(handler);
         });
     </script>
